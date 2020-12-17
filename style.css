@@ -309,9 +309,17 @@ a.btn:active {
   margin-bottom: 1rem;
 }
 
-.service p {
+.service a {
   font-size: 1.4rem;
   color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  line-height: 2.5;
+}
+
+.service a:hover {
+  transform: scale(1.2);
+  color: #999;
 }
 
 .service:hover {
@@ -396,6 +404,7 @@ a.btn:active {
   border-radius: 1rem;
   border-bottom: 4px solid transparent;
   transition: all 300ms ease-in-out;
+  height: 35rem;
 }
 
 .mentor .img-cover {
@@ -487,14 +496,19 @@ a.btn:active {
 .form textarea {
   max-width: 55.5rem;
   height: 16rem;
-  margin-bottom: 3rem;
+}
+
+.form input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
 /* End of Main */
 
 /* Footer */
 footer {
   background-color: #000;
-  padding: 1.6rem 1rem;
+  padding: 3rem 1rem;
   text-align: center;
 }
 
@@ -507,9 +521,58 @@ footer p span {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 1500px) {
+  .header img {
+    right: 0;
+    width: 75rem;
+  }
+
+  .hero {
+    transform: translate(55%, -50%);
+  }
+
+  .icons {
+    left: 17%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .header img {
+    right: 0;
+    bottom: 0;
+    width: 70rem;
+  }
+
+  .hero {
+    transform: translate(40%, -50%);
+  }
+
+  .icons {
+    left: 14%;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 3rem;
+  }
+
+  .hero {
+    transform: translate(30%, -50%);
+  }
+
+  .icons {
+    left: 12%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .header img {
+    width: 65rem;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
   }
 }
 
@@ -519,11 +582,17 @@ footer p span {
   }
 
   .header img {
-    width: 50rem;
+    width: 56rem;
+    bottom: 20%;
   }
 
   .hero {
+    top: 40%;
     transform: translate(10%, -50%);
+  }
+
+  .icons {
+    left: 4%;
   }
 
   .right h1 {
@@ -544,9 +613,25 @@ footer p span {
   }
 }
 
+@media (max-width: 850px) {
+  .logo h1 {
+    font-size: 2.1rem;
+  }
+
+  .header img {
+    width: 53rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .header img {
-    width: 40rem;
+    width: 45rem;
+    bottom: 10%;
+    right: 20%;
   }
 
   .menu {
@@ -621,8 +706,17 @@ footer p span {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  .hero {
+    top: 30%;
+    transform: translate(50%, -50%);
+  }
+
   .hero h1 {
     font-size: 4rem;
+  }
+
+  .icons {
+    left: 40%;
   }
 
   .about-center {
@@ -666,11 +760,11 @@ footer p span {
   }
 
   .header img {
-    width: 35rem;
+    right: 7%;
   }
 
   .hero {
-    top: 35%;
+    top: 28%;
   }
 
   .hero h3 {
@@ -686,6 +780,21 @@ footer p span {
   }
 
   .icons {
-    display: none;
+    left: 35%;
+  }
+
+  footer p {
+    width: 250px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .header img {
+    right: 0;
+  }
+
+  .hero {
+    transform: translate(30%, -50%);
   }
 }
