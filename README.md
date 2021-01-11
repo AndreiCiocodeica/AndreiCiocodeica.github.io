@@ -28,3 +28,4 @@
 :pray:
 
 <p>Project status: <span style="font-weight: bold;">Done<span></p>
+<a href="https://andreiciocodeica.github.io/">Check my portfolio site!!</a>
